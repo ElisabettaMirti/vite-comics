@@ -1,4 +1,4 @@
-<script setup>
+<script>
 
 </script>
 
@@ -6,6 +6,9 @@
 
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+  @use './styles/partials/mixins.scss';
+  @use './styles/partials/variables.scss';
+  @use './styles/general.scss';
 
 </style>
