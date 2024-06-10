@@ -13,7 +13,7 @@ export default {
                     id: 2,
                     title: 'comics',
                     url: '#',
-                    active: false
+                    active: true
                 },
                 {
                     id: 3,
@@ -80,8 +80,10 @@ export default {
     <section class="navbar">
         <nav>
             <ul>
-                <li v-for="link in NavLinks" :key="link.id">
-                    {{ link.title }}
+                <li v-for="link in NavLinks" :key="link.id" :class="(link.active) ? 'active' : ''">
+                    <a :href="link.url">
+                        {{ link.title }}
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -93,7 +95,30 @@ export default {
 
 <style lang="scss" scoped>
 
+@use '../styles/partials/variables.scss' as *;
+@use '../styles/partials/mixins' as *;
+
 header{
     background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 20rem;
+
+    ul{
+        display: flex;
+        
+
+        li{
+            text-transform: uppercase;
+            font-weight: bolder;
+            padding: 1rem;
+            color: $main-black;
+
+            &.active{
+                color: $main-blue;
+            }
+        }
+    }
 }
 </style>
