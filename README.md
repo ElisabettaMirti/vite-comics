@@ -5,4 +5,4 @@ Per oggi diamo priorità alla struttura: quando è tutto bello solido, passiamo 
 Bonus:
 Creare un componente aggiuntivo per gestire la fascia azzurra con le icone.
 
->Creo 5 componenti (mi baso sulle fasci di colore)
+>Creo 5 componenti (mi baso sulle fasce di colore)

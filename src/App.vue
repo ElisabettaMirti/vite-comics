@@ -21,10 +21,18 @@ export default {
 
 <template>
   <AppHeaderNav/>
-  <AppMainContent/>
-  <AppMerchNav/>
-  <AppFooterNav/>
-  <AppFooterLinks/>
+
+  <main>
+    <AppMainContent/>
+    <AppMerchNav/>
+  </main>
+  
+
+  <footer>
+    <AppFooterNav/>
+    <AppFooterLinks/>
+  </footer>
+  
 </template>
 
 <style lang="scss" scoped>
