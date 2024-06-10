@@ -6,52 +6,62 @@ export default {
                 {
                     id: 1,
                     title: 'characters',
-                    url: '#'
+                    url: '#',
+                    active: false
                 },
                 {
                     id: 2,
                     title: 'comics',
-                    url: '#'
+                    url: '#',
+                    active: false
                 },
                 {
                     id: 3,
                     title: 'movies',
-                    url: '#'
+                    url: '#',
+                    active: false
                 },
                 {
                     id: 4,
                     title: 'tv',
-                    url: '#'
+                    url: '#',
+                    active: false
                 },
                 {
                     id: 5,
                     title: 'games',
-                    url: '#'
+                    url: '#',
+                    active: false
                 },
                 {
                     id: 6,
                     title: 'collectibles',
-                    url: '#'
+                    url: '#',
+                    active: false
                 },
                 {
                     id: 7,
                     title: 'videos',
-                    url: '#'
+                    url: '#',
+                    active: false
                 },
                 {
                     id: 8,
                     title: 'fans',
-                    url: '#'
+                    url: '#',
+                    active: false
                 },
                 {
                     id: 9,
                     title: 'news',
-                    url: '#'
+                    url: '#',
+                    active: false
                 },
                 {
                     id: 10,
                     title: 'shop',
-                    url: '#'
+                    url: '#',
+                    active: false
                 }
             ]
         }
@@ -59,10 +69,31 @@ export default {
 }
 </script>
 
+
 <template>
+
+<header>
+    <section class="logo">
+        <img src="../assets/img/dc-logo.png" alt="DC logo">
+    </section>
+
+    <section class="navbar">
+        <nav>
+            <ul>
+                <li v-for="link in NavLinks" :key="link.id">
+                    {{ link.title }}
+                </li>
+            </ul>
+        </nav>
+    </section>
+</header>
 
 </template>
 
+
 <style lang="scss" scoped>
 
+header{
+    background-color: #ffffff;
+}
 </style>
