@@ -161,7 +161,10 @@ export default {
                 </section>
             </nav>
         </section>
-        <section class="dc-logo"></section>
+
+        <section class="dc-logo">
+            <img src="../assets/img/dc-logo-bg.png" alt="DC main logo">
+        </section>
     </div>
     
 </template>
@@ -200,6 +203,10 @@ export default {
     .nav-two,
     .nav.three{
         margin-right: 2rem;
+    }
+
+    img{
+        object-fit: cover;
     }
 
 </style>
