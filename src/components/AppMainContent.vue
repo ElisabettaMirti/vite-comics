@@ -1,17 +1,21 @@
 <script>
+import LatestComicsList from './LatestComicsList.vue';
+
 export default {
     data(){
         return {
+            
         }
+    },
+    components: {
+        LatestComicsList
     }
 }
 </script>
 
 <template>
     <div class="main-content">
-        <h1>
-        --> Content goes here <--
-        </h1>
+        <LatestComicsList/>
     </div>
 </template>
 
@@ -26,8 +30,7 @@ export default {
         display: flex;
         align-items: center;
         background-color: $main-black;
-        height: 10rem;
-        padding: 3rem 20rem;
+        padding: 3rem 20rem 1.8rem;
         color: white;
     }
 </style>
