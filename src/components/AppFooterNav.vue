@@ -176,7 +176,6 @@ export default {
 
     div.footer-container{
         padding: 0 20rem;
-        max-height: 400px;
         display: flex;
         justify-content: space-between;
         background-image: url(../assets/img/footer-bg.jpg);
@@ -198,6 +197,12 @@ export default {
 
     ul>li{
         color: #707070;
+        padding: .2rem;
+
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
     }
 
     .nav-one,
@@ -206,8 +211,6 @@ export default {
         margin-right: 2rem;
     }
 
-    img{
-        object-fit: cover;
-    }
+
 
 </style>
