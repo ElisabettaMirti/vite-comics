@@ -4,6 +4,7 @@ import AppMainContent from './components/AppMainContent.vue';
 import AppMerchNav from './components/AppMerchNav.vue';
 import AppFooterNav from './components/AppFooterNav.vue';
 import AppFooterLinks from './components/AppFooterLinks.vue';
+import AppHeaderJumbo from './components/AppHeaderJumbo.vue';
 
 export default {
   data(){
@@ -14,13 +15,15 @@ export default {
     AppMainContent,
     AppMerchNav,
     AppFooterNav,
-    AppFooterLinks
+    AppFooterLinks,
+    AppHeaderJumbo
   }
 }
 </script>
 
 <template>
   <AppHeaderNav/>
+  <AppHeaderJumbo/>
 
   <main>
     <AppMainContent/>
