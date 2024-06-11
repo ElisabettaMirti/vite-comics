@@ -84,6 +84,9 @@ export default {
 <template>
 
 <div class="container">
+    <div class="current-titles">
+        <h2>current series</h2>
+    </div>
     <section class="latest-comics">
     <article v-for="(article, index) in CurrentSeriesList" :key="index">
         <div class="img-cover">
@@ -106,6 +109,24 @@ export default {
 @use '../styles/partials/variables.scss' as *;
 @use '../styles/partials/mixins' as *;
 
+div.container{
+    position: relative;
+
+    div.current-titles{
+        background-color: $main-blue;
+        width: 250px;
+        position: absolute;
+        top: -75px;
+        left: -22px;
+
+        h2{
+            text-transform: uppercase;
+            text-align: center;
+            padding: .7rem 1rem;
+        }
+    }
+}
+
 section{
     display: flex;
     justify-content: space-between;
@@ -120,8 +141,8 @@ section{
         align-self: flex-start;
 
         img{
-            width: 200px;
-            height: 200px;
+            width: 260px;
+            height: 260px;
             object-fit: cover;
             object-position: top;
             margin-bottom: 1rem;
