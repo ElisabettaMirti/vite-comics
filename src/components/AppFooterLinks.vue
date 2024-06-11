@@ -92,6 +92,12 @@ section.links,
 
     li{
         margin-right: 1rem;
+        transition: filter 1s ease-out;
+
+        &:hover img{
+            filter: brightness(150%);
+            cursor: pointer;
+        }
     }
 }
 

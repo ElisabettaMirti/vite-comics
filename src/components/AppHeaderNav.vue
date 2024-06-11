@@ -80,7 +80,7 @@ export default {
     <section class="navbar">
         <nav>
             <ul>
-                <li v-for="link in NavLinks" :key="link.id" :class="(link.active) ? 'active' : ''">
+                <li v-for="link in NavLinks" :key="link.id" :class="(link.active===true) ? 'active' : ''">
                     <a :href="link.url">
                         {{ link.title }}
                     </a>
