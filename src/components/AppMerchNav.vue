@@ -32,7 +32,9 @@ export default {
         }
     },
     methods: {
-
+        getImagePath: function (imgPath) {
+            return new URL(imgPath, import.meta.url).href;
+        }
     }
 }
 </script>
