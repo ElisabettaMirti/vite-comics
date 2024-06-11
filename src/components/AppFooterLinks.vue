@@ -6,27 +6,27 @@ export default {
                 {
                     id: 1,
                     name: "Facebook",
-                    logo: "../assets/img/footer-facebook.png"
+                    logo: "./src/assets/img/footer-facebook.png"
                 },
                 {
                     id: 2,
                     name: "Twitter",
-                    logo: "../assets/img/footer-twitter.png"
+                    logo: "./src/assets/img/footer-twitter.png"
                 },
                 {
                     id: 3,
                     name: "Youtube",
-                    logo: "../assets/img/footer-youtube.png"
+                    logo: "./src/assets/img/footer-youtube.png"
                 },
                 {
                     id: 4,
                     name: "Pinterest",
-                    logo: "../assets/img/footer-pinterest.png"
+                    logo: "./src/assets/img/footer-pinterest.png"
                 },
                 {
                     id: 5,
                     name: "Periscope",
-                    logo: "../assets/img/footer-periscope.png"
+                    logo: "./src/assets/img/footer-periscope.png"
                 },
             ]
         }
@@ -82,6 +82,15 @@ h2{
     text-transform: uppercase;
     color: $main-blue;
     margin-right: 1rem;
+}
+
+section.links,
+.links>ul{
+    display: flex;
+    
+    li{
+        margin-right: 1rem;
+    }
 }
 
 </style>
