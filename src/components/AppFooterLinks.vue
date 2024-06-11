@@ -59,6 +59,8 @@ export default {
 @use '../styles/general.scss';
 
 div.footer-socials{
+    position: relative;
+    z-index: 1;
     background-color: #303030;
     padding: 3rem 20rem;
     display: flex;
@@ -87,7 +89,7 @@ h2{
 section.links,
 .links>ul{
     display: flex;
-    
+
     li{
         margin-right: 1rem;
     }

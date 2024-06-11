@@ -21,6 +21,8 @@ export default {
 @use '../styles/partials/mixins' as *;
 
     div.main-content{
+        position: relative;
+        z-index: 1;
         display: flex;
         align-items: center;
         background-color: $main-black;

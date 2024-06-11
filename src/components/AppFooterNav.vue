@@ -211,6 +211,14 @@ export default {
         margin-right: 2rem;
     }
 
+section.dc-logo{
+    position: relative;
 
+    img{
+        position: absolute;
+        right: 50%;
+        bottom: -10%;
+    }
+}
 
 </style>
