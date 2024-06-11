@@ -89,10 +89,10 @@ h2{
 section.links,
 .links>ul{
     display: flex;
+    align-items: center;
 
     li{
         margin-right: 1rem;
-        transition: filter 1s ease-out;
 
         &:hover img{
             filter: brightness(150%);
