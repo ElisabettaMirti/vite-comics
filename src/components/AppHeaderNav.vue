@@ -113,14 +113,12 @@ header{
             text-transform: uppercase;
             font-weight: bolder;
             padding: 1rem;
-
-            a{
-                color: $main-black;
-            }
-            &.active{
-                color: $main-blue;
-            }
+            color: $main-black;
+    
+        &.active a{
+        color: $main-blue;
         }
     }
+}
 }
 </style>
